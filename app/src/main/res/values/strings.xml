@@ -4,5 +4,15 @@
     <string name="app_name">DemoLoginPatternApp</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="dialog_pattern">Sign up(Dialog pattern)</string>
+    <string name="disabled_pattern">Log in(Disabeld pattern)</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signup_error_empty_username">Please input username</string>
+    <string name="signup_error_empty_password">Please input password</string>
+    <string name="login_error_empty_username">Please input username</string>
+    <string name="login_error_empty_password">Please input password</string>
+    <string name="signup">Sign up</string>
 
 </resources>

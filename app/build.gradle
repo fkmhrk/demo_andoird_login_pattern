@@ -18,6 +18,16 @@ android {
     }
 }
 
+repositories {
+    maven {
+        url 'https://github.com/fkmhrk/kiilib-android-volley/tree/master/m2repository'
+    }
+    maven {
+        url  'https://github.com/fkmhrk/KiiLib-Java/tree/master/m2repository'
+    }
+    mavenLocal()
+}
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+//    compile 'jp.fkmsoft.libs:KiiLib-Android-Volley:2.+'
 }

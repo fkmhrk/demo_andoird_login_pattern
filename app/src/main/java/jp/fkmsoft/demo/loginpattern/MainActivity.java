@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+
+import jp.fkmsoft.demo.loginpattern.android.page.top.TopFragment;
 
 
 public class MainActivity extends Activity {
@@ -11,7 +14,12 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         setContentView(R.layout.activity_main);
+
+        if (savedInstanceState == null) {
+            ViewUtils.toNextFragment(getFragmentManager(), TopFragment.newInstance(), null);
+        }
     }
 
 
